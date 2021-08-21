@@ -1,8 +1,10 @@
 on:
   push:
     branches:
-    - main
-    - features/add-healthchecks
+      - main
+  pull_request:
+    branches:
+      - main
     
 jobs:
   build:
