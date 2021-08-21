@@ -18,7 +18,7 @@ jobs:
       with:
         versionSpec: '5.x'
     - name: GitTools
-      uses: GitTools/actions@v0.9.10
+      uses: gittools/actions/gitversion/execute@v0.9.10
     - name: Build
       run: dotnet build --configuration Release
     - name: Test
