@@ -13,6 +13,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: Install GitVersion
+      uses: gittools/actions/gitversion/setup@v0.9.10
+      with:
+        versionSpec: '5.x'
     - name: GitTools
       uses: GitTools/actions@v0.9.10
     - name: Build
