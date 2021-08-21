@@ -21,6 +21,8 @@ jobs:
         versionSpec: '5.x'
     - name: GitTools
       uses: gittools/actions/gitversion/execute@v0.9.10
+      with:
+        updateAssemblyInfo: true
     - name: Build
       run: dotnet build --configuration Release
     - name: Test
