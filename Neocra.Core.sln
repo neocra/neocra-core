@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neocra.Core.AspNetCore.HealthChecks", "Neocra.Core.AspNetCore.HealthChecks\Neocra.Core.AspNetCore.HealthChecks.csproj", "{06008603-2465-498C-A9F1-68CB15771CF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neocra.Core.Tests", "Neocra.Core.Tests\Neocra.Core.Tests.csproj", "{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{06008603-2465-498C-A9F1-68CB15771CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06008603-2465-498C-A9F1-68CB15771CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06008603-2465-498C-A9F1-68CB15771CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
