@@ -23,7 +23,14 @@ jobs:
       uses: gittools/actions/gitversion/execute@v0.9.10
       with:
         updateAssemblyInfo: true
+    - name: Install sonarscanner
+      run: dotnet tool install --global dotnet-sonarscanner
+    - name: Begin scan
+      run: dotnet sonarscanner begin /k:"project-key" /o:"<organization>" /d:sonar.login="<token>"
     - name: Build
       run: dotnet build --configuration Release
     - name: Test
       run: dotnet test --configuration Release --no-build
+    - name: End scan
+      run: dotnet sonarscanner end /d:sonar.login="<token>"
+      
