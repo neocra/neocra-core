@@ -26,7 +26,7 @@ jobs:
     - name: Install sonarscanner
       run: dotnet tool install --global dotnet-sonarscanner
     - name: Begin scan
-      run: dotnet sonarscanner begin /k:"project-key" /o:"<organization>" /d:sonar.login="<token>"
+      run: dotnet sonarscanner begin /k:"neocra-core" /o:"neocra-github" /d:sonar.login="<token>"
     - name: Build
       run: dotnet build --configuration Release
     - name: Test
