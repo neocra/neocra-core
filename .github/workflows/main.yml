@@ -32,7 +32,7 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
     - name: Test
-      run: dotnet test --configuration Release --no-build
+      run: dotnet test --configuration Release --no-build  --collect "Code coverage"
     - name: End scan
       run: dotnet sonarscanner end /d:sonar.login="$SONAR_TOKEN"
       env:
