@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/neocra/neocra-core</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="5.0.1" />
+    </ItemGroup>
+
+</Project>
