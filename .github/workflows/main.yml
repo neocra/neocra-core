@@ -26,7 +26,7 @@ jobs:
     - name: Install sonarscanner
       run: dotnet tool install --global dotnet-sonarscanner
     - name: Begin scan
-      run: dotnet sonarscanner begin /k:"neocra-core" /o:"neocra-github" /d:sonar.host.url=https://sonarcloud.io /d:sonar.login="$SONAR_TOKEN" /d:sonar.cs.opencover.reportsPaths="overage.opencover.xml"
+      run: dotnet sonarscanner begin /k:"neocra-core" /o:"neocra-github" /d:sonar.host.url=https://sonarcloud.io /d:sonar.login="$SONAR_TOKEN" /d:sonar.cs.opencover.reportsPaths="coverage.opencover.xml"
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     - name: Build
