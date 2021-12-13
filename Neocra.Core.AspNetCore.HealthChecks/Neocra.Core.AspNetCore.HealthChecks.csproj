@@ -2,12 +2,19 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageIcon>icon.png</PackageIcon>
+        <IsPackable>true</IsPackable>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/neocra/neocra-core</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="5.0.1" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="icon.png" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>
