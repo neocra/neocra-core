@@ -39,6 +39,7 @@ jobs:
       run: dotnet build --configuration Release
     - name: Test
       run: dotnet test --configuration Release --no-build  --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
+      working-directory: Neocra.Core.Tests/
     - name: Copy coverage
       run: cp Neocra.Core.Tests/TestResults/*/coverage.opencover.xml .
     - name: End scan
