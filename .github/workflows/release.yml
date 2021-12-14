@@ -28,6 +28,7 @@ jobs:
       run: dotnet build --configuration Release /p:Version=${GitVersion_SemVer}
     - name: Test
       run: dotnet test --configuration Release /p:Version=${GitVersion_SemVer} --no-build
+      working-directory: Neocra.Core.Tests/
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=${GitVersion_SemVer} --no-build --output .
     - name: Push
