@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neocra.Core.AspNetCore.Heal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neocra.Core.Tests", "Neocra.Core.Tests\Neocra.Core.Tests.csproj", "{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neocra.Core.Logger.Xunit", "Neocra.Core.Logger.Xunit\Neocra.Core.Logger.Xunit.csproj", "{D26C8005-9394-47C2-B1DA-DBE8F1ABA85B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4723E929-7DF2-4C3C-8CDC-0C8BF2A8F692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D26C8005-9394-47C2-B1DA-DBE8F1ABA85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26C8005-9394-47C2-B1DA-DBE8F1ABA85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26C8005-9394-47C2-B1DA-DBE8F1ABA85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26C8005-9394-47C2-B1DA-DBE8F1ABA85B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
