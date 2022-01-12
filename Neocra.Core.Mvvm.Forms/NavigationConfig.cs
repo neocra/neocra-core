@@ -4,6 +4,11 @@
 {
     public class NavigationConfig
     {
-        public Type RootPage { get; set; }
+        public NavigationConfig(Type rootPage)
+        {
+            this.RootPage = rootPage;
+        }
+
+        public Type RootPage { get; }
     }
 }
