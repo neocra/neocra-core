@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageIcon>icon.png</PackageIcon>
+        <IsPackable>true</IsPackable>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/neocra/neocra-core</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="icon.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Neocra.Core.Mvvm\Neocra.Core.Mvvm.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Pattern.Config" Version="1.4.0-unstable0037" />
+      <PackageReference Include="Pattern.Core.Interfaces" Version="1.4.0-unstable0037" />
+      <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
+    </ItemGroup>
+
+</Project>

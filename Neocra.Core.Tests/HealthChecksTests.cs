@@ -4,13 +4,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Neocra.Core.AspNetCore.HealthChecks;
+using Neocra.Xunit.Extensions;
 using Xunit;
 
 namespace Neocra.Core.Tests
 {
     public class HealthChecksTests
     {
-        [Fact]
+        [NamedFact]
         public async Task Should_get_version_When_generate_response()
         {
             var defaultHttpContext = new DefaultHttpContext();
