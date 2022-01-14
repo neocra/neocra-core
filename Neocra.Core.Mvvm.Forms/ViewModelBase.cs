@@ -33,15 +33,15 @@ namespace Neocra.Core.Mvvm.Forms
         
         internal object? Parameter { get; set; }
 
-        public T? GetParameter<T>()
+        public T GetParameter<T>()
         {
-            return (T?)this.Parameter;
+            return (T)this.Parameter!;
         }
         
-        public Task InitOrResumeAsync(object? parameter)
+        public Task InitOrResumeAsync(object? parameter = null)
         {
             this.Parameter = parameter;
-            
+
             if (!this.isInit)
             {
                 this.isInit = true;
