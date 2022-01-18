@@ -23,16 +23,26 @@ namespace Neocra.Core.Mvvm
 
         public bool CanExecute(object? parameter)
         {
-            _ = parameter ?? throw new ArgumentException("Parameter is null", nameof(parameter));
-            return this.canExecute?.Invoke((T) parameter) ?? true;
+            if (parameter == null)
+            {
+                return this.canExecute?.Invoke(default!) ?? true;
+            }
+
+            return this.canExecute?.Invoke((T)parameter) ?? true;
         }
 
         public void Execute(object? parameter)
         {
-            _ = parameter ?? throw new ArgumentException("Parameter is null", nameof(parameter));
             if (this.CanExecute(parameter))
             {
-                this.action((T)parameter);
+                if (parameter == null)
+                {
+                    this.action(default!);
+                }
+                else
+                {
+                    this.action((T)parameter);
+                }
             }   
         }
     }
