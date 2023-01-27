@@ -16,6 +16,7 @@ jobs:
         dotnet-version: |
           5.0.x
           6.0.x
+          7.0.x
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v0.9.10
       with:
