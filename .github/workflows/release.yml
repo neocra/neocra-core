@@ -41,10 +41,10 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=${GitVersion_SemVer} --no-build --output .
     - name: Push
-      run: dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/neocra/index.json --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/neocra/index.json --skip-duplicate --api-key ${GITHUB_TOKEN}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Push
-      run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
+      run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --skip-duplicate --api-key ${NUGET_TOKEN}
       env:
         NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
