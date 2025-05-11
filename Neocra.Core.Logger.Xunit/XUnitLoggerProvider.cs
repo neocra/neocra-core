@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Neocra.Core.Logger.Xunit;
 
-public class XUnitLoggerProvider : ILoggerProvider
+public sealed class XUnitLoggerProvider : ILoggerProvider
 {
     private readonly ITestOutputHelper testOutputHelper;
 
