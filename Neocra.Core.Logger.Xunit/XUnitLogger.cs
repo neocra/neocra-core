@@ -1,9 +1,9 @@
 using Microsoft.Extensions.Logging;
-using Xunit.Abstractions;
+using Xunit;
 
 namespace Neocra.Core.Logger.Xunit;
 
-public class XUnitLogger : ILogger, IDisposable
+public sealed class XUnitLogger : ILogger, IDisposable
 {
     private readonly string categoryName;
     private readonly ITestOutputHelper testOutputHelper;
@@ -15,6 +15,7 @@ public class XUnitLogger : ILogger, IDisposable
     }
 
     public IDisposable BeginScope<TState>(TState state)
+        where TState : notnull
     {
         return this;
     }
